@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'post.css' %}" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="post">
+        <p class="post-title">{{post.title}}</p>
+        <p class="post-date">{{post.created_at}}</p>
+        <p class="post-body">{{post.body}}</p>
+    </div>
+</body>
+</html>
